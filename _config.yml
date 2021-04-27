@@ -2,7 +2,7 @@
 title:              "Jekyll Latex"
 description:        "A pretty good Jekyll theme"
 google_verify:      abc123 # Put your Google Verification here
-google_analytics:   UA-123
+google_analytics:   UA-123456
 
 # Author Info
 author_name:        "John Doe" # Your name here

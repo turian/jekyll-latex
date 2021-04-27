@@ -25,6 +25,19 @@ y^{(i)})2 + \lambda\sum^n_{j=1}\theta^2_j $$
 {% endraw %}
 ```
 
+Sidenotes can be used as an alternative to footnotes, where the user does not have to jump to the bottom of the page to read it. On mobile, click the superscript to reveal the note
+
+{: .sidenote }
+Yay, sidenotes!. If you are on mobile, I will appear inline. If you are using a larger screen, the sidenote will appear to the right of the text.
+
+
+Sidenotes can be used as an alternative to footnotes, where the user does not have to jump to the bottom of the page to read it. On mobile, click the superscript to reveal the note
+
+{: .sidenote .left }
+Yay, sidenotes!. If you are on mobile, I will appear inline. If you are using a larger screen, the sidenote will appear to the right of the text.
+
+
+
 # Table of Contents
 * TOC
 {:toc}
