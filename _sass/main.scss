@@ -4,41 +4,89 @@
  * Source: https://github.com/vincentdoerig/latex-css
  * Licensed under MIT (https://github.com/vincentdoerig/latex-css/blob/master/LICENSE)
 */
-
 @font-face {
-	font-family: "Latin Modern";
-	font-style: normal;
-	font-weight: normal;
-	font-display: swap;
-	src: url("./fonts/LM-regular.woff2") format("woff2"), url("./fonts/LM-regular.woff") format("woff"),
-		url("./fonts/LM-regular.ttf") format("truetype");
+	font-family: CMR;
+	src: url(../assets/fonts/cmuserif_roman_macroman/cmunrm-webfont.woff);
+}
+@font-face {
+	font-family: CMB;
+	src: url(../assets/fonts/cmuserif_bold_macroman/cmunbx-webfont.woff);
 }
 
-@font-face {
-	font-family: "Latin Modern";
-	font-style: italic;
-	font-weight: normal;
-	font-display: swap;
-	src: url("./fonts/LM-italic.woff2") format("woff2"), url("./fonts/LM-italic.woff") format("woff"),
-		url("./fonts/LM-italic.ttf") format("truetype");
+.Margins {
+	p,
+	.BodyText {
+		font-family: CMR;
+		font-size: 23px;
+		text-align: justify;
+		margin-top: 13px;
+		margin-bottom: 45px;
+		line-height: 125%;
+	}
+	.Section,
+	h2 {
+		font-family: CMB;
+		font-size: 33px;
+		text-align: Left;
+		margin-top: 13px;
+		margin-bottom: 20px;
+	}
+	a:-webkit-any-link {
+		color: -webkit-link;
+		cursor: pointer;
+		text-decoration: underline;
+	}
+.LatexTitle {
+	font-family: CMR;
+	font-size: 40px;
+	padding-top: 5vh;
+	text-align: center;
+	margin-bottom: 20px;
 }
 
-@font-face {
-	font-family: "Latin Modern";
-	font-style: normal;
+.LatexName {
+	font-family: CMR;
+	font-size: 27px;
+	text-align: center;
+	margin-bottom: 13px;
+}
+.LatexDate {
+	font-family: CMR;
+	font-size: 27px;
+	text-align: center;
+	margin-top: 13px;
+	margin-bottom: 45px;
+}
+
+.LatexAbstract {
+	font-family: CMB;
 	font-weight: bold;
-	font-display: swap;
-	src: url("./fonts/LM-bold.woff2") format("woff2"), url("./fonts/LM-bold.woff") format("woff"),
-		url("./fonts/LM-bold.ttf") format("truetype");
+	font-size: 25px;
+	text-align: center;
+	margin-bottom: 10px;
 }
 
-@font-face {
-	font-family: "Latin Modern";
-	font-style: italic;
-	font-weight: bold;
-	font-display: swap;
-	src: url("./fonts/LM-bold-italic.woff2") format("woff2"), url("./fonts/LM-bold-italic.woff") format("woff"),
-		url("./fonts/LM-bold-italic.ttf") format("truetype");
+.LatexAbstractText {
+	margin-top: 10px;
+	font-family: CMR;
+	font-size: 21px;
+	text-align: justify;
+	text-indent: 20px;
+}
+.AbstractMargins {
+    margin-left: auto;
+		margin-right: auto;
+    width: 88%;
+    padding-bottom: 15px;
+}
+	@media (min-width: 1024px) {
+		& {
+			margin-left: auto;
+			margin-right: auto;
+			width: 58vw;
+			//max-width: 900px;
+		}
+	}
 }
 
 /* Box sizing rules */
@@ -72,10 +120,10 @@ html {
 }
 
 body {
-	font-family: "Latin Modern", Georgia, Cambria, "Times New Roman", Times, serif;
+	font-family: CMR, Georgia, Cambria, "Times New Roman", Times, serif;
 	line-height: 1.8;
 
-	max-width: 80ch;
+	//max-width: 80ch;
 	min-height: 100vh;
 	overflow-x: hidden;
 	margin: 0 auto;
@@ -198,6 +246,7 @@ tfoot th {
 /* Center align the title */
 h1:first-child {
 	text-align: center;
+	font-weight: normal;
 }
 
 article {

@@ -4,12 +4,11 @@ author: John Doe
 layout: post
 ---
 
-{% abstract %}
+{: .abstract}
 This project is called jekyll-latex. It allows you to write markdown posts using the Jekyll framework with the beautiful typography of <span class="latex">L<span>a</span>T<span>e</span>X</span> and the MathJax library so you can render gorgeous equations like this one below:
 $$ J(\theta) =\frac{1}{2m}
 [\sum^m_{i=1}(h_\theta(x^{(i)}) -
 y^{(i)})2 + \lambda\sum^n_{j=1}\theta^2_j $$
-{% endabstract %}
 
 ```
 {% raw %}
@@ -25,6 +24,19 @@ y^{(i)})2 + \lambda\sum^n_{j=1}\theta^2_j $$
 {% endraw %}
 ```
 
+Sidenotes can be used as an alternative to footnotes, where the user does not have to jump to the bottom of the page to read it. On mobile, click the superscript to reveal the note
+
+{: .sidenote }
+Yay, sidenotes!. If you are on mobile, I will appear inline. If you are using a larger screen, the sidenote will appear to the right of the text.
+
+
+Sidenotes can be used as an alternative to footnotes, where the user does not have to jump to the bottom of the page to read it. On mobile, click the superscript to reveal the note
+
+{: .sidenote .left }
+Yay, sidenotes!. If you are on mobile, I will appear inline. If you are using a larger screen, the sidenote will appear to the right of the text.
+
+
+
 # Table of Contents
 * TOC
 {:toc}
@@ -39,11 +51,10 @@ y^{(i)})2 + \lambda\sum^n_{j=1}\theta^2_j $$
 
 # Theorems, Definitions, and Proofs
 
-{% theorem %}
+{: .theorem }
 The real numbers $\mathbb{R}$ are uncountable
-{% endtheorem %}
 
-{% proof %}
+{: .proof }
 If $\mathbb{R}$ is countable, then [0, 1] is countable as well. Hence there exists a map
 C from $\mathbb{N}$ onto [0, 1] with $$C(n)=\sum_{i=1}^{\infty} c_{i}(n) 10^{-i}$$ where $c_{i}(n) \in\{0,1,
 \ldots, 9\},$
@@ -52,10 +63,8 @@ number
 $$x=\sum_{i=1}^{\infty} \bar{c}_{i} 10^{-i} \in[0,1]$$
 with $\bar{c}_{i} \neq c_{i}(i)$. Obviously $C(n) \neq x$ for all $n \in \mathbb{N} .$ Hence $C$ is not onto. A
 contradiction.
-{% endproof %}
 
-<pre>
-<code>
+```
 {% raw %}
 {% theorem %}
 {% endraw %}
@@ -78,8 +87,7 @@ with $\bar{c}_{i} \neq c_{i}(i)$. Obviously $C(n) \neq x$ for all $n \in
 {% raw %}
 {% endproof %}
 {% endraw %}
-</code>
-</pre>
+```
 
 
 # HTML Elements
@@ -108,16 +116,13 @@ First Term
 Triple Integral
 : $\iiint_V \mu(u,v,w) \,du\,dv\,dw$
 
-<pre>
-<code>
+```
 First Term
 : This is the definition of the first term.
 
 Triple Integral
 : $\iiint_V \mu(u,v,w) \,du\,dv\,dw$
-
-</code>
-</pre>
+```
 
 ## Blockquotes
 

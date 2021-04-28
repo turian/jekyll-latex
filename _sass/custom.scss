@@ -1,0 +1,17 @@
+.sidenote {
+  font-size: 0.8rem;
+  clear: right;
+  width: 18vw;
+  margin-bottom: 1em;
+  @media (min-width: 1024px) {
+    float: right;
+    margin-right: -20vw;
+  }
+}
+.sidenote.left {
+  margin-bottom: 1em;
+  @media (min-width: 1024px) {
+    float: left;
+    margin-left: -20vw;
+  }
+}

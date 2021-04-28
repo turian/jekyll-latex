@@ -1,7 +1,8 @@
 ---
 layout: default
 ---
-
+<div class="Margins">
+<h1 class="LatexTitle">{{page.title}}</h1>
 <section>
 	{% for post in site.posts %}
 	{% unless post.next %}
@@ -24,7 +25,10 @@ layout: default
 			</div>
 		</li>
 	</ul>
-
 	{% endfor %}
 
 </section>
+
+	{{content}}
+
+</div>
