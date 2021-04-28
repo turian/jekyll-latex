@@ -11,6 +11,13 @@ layout: default
             {{ page.date | date: '%B %-d, %Y' }}
         </p>
 
+        <div class="AbstractMargins">
+            <h3 class="LatexAbstract">
+                Abstract
+            </h3>
+            <p class="LatexAbstractText">{{page.abstract}}</p>
+        </div>
+
     </div>
 
     <div class="divider"></div>
@@ -27,7 +34,7 @@ layout: default
             &middot;
         </span>
     {% endif %}
-    <a class="home" href="{{ site.baseurl | prepend: site.url }}" title="Back to Homepage">Home</a>
+    <a class="home" href="{{ site.baseurl | prepend: site.url }}/" title="Back to Homepage">Home</a>
     {% if page.previous.url %}
         <span>
             &middot;

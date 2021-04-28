@@ -3,7 +3,7 @@
   <channel>
     <title>Jekyll Latex</title>
     <description>A pretty good Jekyll theme</description>
-    <link>https://ryanmcdermott.me/jekyll-latex</link>
+    <link>http://localhost:4000/latex</link>
     
       
         <item>
@@ -22,22 +22,43 @@
 
 </description>
           <pubDate>2021-04-27T00:00:00-07:00</pubDate>
-          <link>https://ryanmcdermott.me/jekyll-latex/posts/old-text</link>
-          <guid isPermaLink="true">https://ryanmcdermott.me/jekyll-latex/posts/old-text</guid>
+          <link>http://localhost:4000/latex/posts/old-text</link>
+          <guid isPermaLink="true">http://localhost:4000/latex/posts/old-text</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>Neural Audio AI</title>
+          <description>&lt;h2 id=&quot;news&quot;&gt;News&lt;/h2&gt;
+
+&lt;p&gt;We will be hosting a NeuroIPS 2021 shared task (competition) entitled
+“General Purpose Off-The-Shelf Audio Representations for Classification,
+Tagging, and Distance Tasks”. The &lt;a href=&quot;https://neuralaudio.ai/neuroips2021-shared-task.html&quot;&gt;shared task&lt;/a&gt;  is described
+here.&lt;/p&gt;
+
+&lt;p&gt;Please consider subscribing to our low-volume announcement &lt;a href=&quot;http://eepurl.com/hwrhrz&quot;&gt;mailing list&lt;/a&gt; and following us on &lt;a href=&quot;https://twitter.com/neuralaudio&quot;&gt;twitter&lt;/a&gt;. Or simply check this web-page for updates.&lt;/p&gt;
+
+&lt;h2 id=&quot;discussion&quot;&gt;Discussion&lt;/h2&gt;
+
+&lt;p&gt;Do you want to talk about audio ML? Please join our &lt;a href=&quot;https://discuss.neuralaudio.ai/&quot;&gt;forum&lt;/a&gt;. Discussion is open to all audio researchers, whether you are participating in the shared task or simply want to exchange knowledge on audio ML.&lt;/p&gt;
+
+</description>
+          <pubDate>2021-04-22T00:00:00-07:00</pubDate>
+          <link>http://localhost:4000/latex/posts/neural-audio-ai</link>
+          <guid isPermaLink="true">http://localhost:4000/latex/posts/neural-audio-ai</guid>
         </item>
       
     
       
         <item>
           <title>What Is jekyll-latex?</title>
-          <description>&lt;div class=&quot;abstract&quot;&gt;&lt;h5&gt;Abstract&lt;/h5&gt;&lt;p&gt;
-This project is called jekyll-latex. It allows you to write markdown posts using the Jekyll framework with the beautiful typography of &lt;span class=&quot;latex&quot;&gt;L&lt;span&gt;a&lt;/span&gt;T&lt;span&gt;e&lt;/span&gt;X&lt;/span&gt; and the MathJax library so you can render gorgeous equations like this one below:
-$$ J(\theta) =\frac{1}{2m}
+          <description>&lt;p class=&quot;abstract&quot;&gt;This project is called jekyll-latex. It allows you to write markdown posts using the Jekyll framework with the beautiful typography of &lt;span class=&quot;latex&quot;&gt;L&lt;span&gt;a&lt;/span&gt;T&lt;span&gt;e&lt;/span&gt;X&lt;/span&gt; and the MathJax library so you can render gorgeous equations like this one below:
+\(J(\theta) =\frac{1}{2m}
 [\sum^m_{i=1}(h_\theta(x^{(i)}) -
-y^{(i)})2 + \lambda\sum^n_{j=1}\theta^2_j $$
-&lt;/p&gt;&lt;/div&gt;
+y^{(i)})2 + \lambda\sum^n_{j=1}\theta^2_j\)&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
 {% abstract %}
 This project is called jekyll-latex. It features the beautiful
 typography of &amp;lt;span class=&quot;latex&quot;&amp;gt;L&amp;lt;span&amp;gt;a&amp;lt;/span&amp;gt;T&amp;lt;span&amp;gt;
@@ -77,7 +98,7 @@ y^{(i)})2 + \lambda\sum^n_{j=1}\theta^2_j $$
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
 # Table of Contents
 * TOC
 {:toc}
@@ -86,24 +107,18 @@ y^{(i)})2 + \lambda\sum^n_{j=1}\theta^2_j $$
 
 &lt;h1 id=&quot;theorems-definitions-and-proofs&quot;&gt;Theorems, Definitions, and Proofs&lt;/h1&gt;
 
-&lt;div class=&quot;theorem&quot;&gt;
-The real numbers $\mathbb{R}$ are uncountable
-&lt;/div&gt;
+&lt;p class=&quot;theorem&quot;&gt;The real numbers $\mathbb{R}$ are uncountable&lt;/p&gt;
 
-&lt;div class=&quot;proof&quot;&gt;
-If $\mathbb{R}$ is countable, then [0, 1] is countable as well. Hence there exists a map
-C from $\mathbb{N}$ onto [0, 1] with $$C(n)=\sum_{i=1}^{\infty} c_{i}(n) 10^{-i}$$ where $c_{i}(n) \in\{0,1,
-\ldots, 9\},$
+&lt;p class=&quot;proof&quot;&gt;If $\mathbb{R}$ is countable, then [0, 1] is countable as well. Hence there exists a map
+C from $\mathbb{N}$ onto [0, 1] with \(C(n)=\sum_{i=1}^{\infty} c_{i}(n) 10^{-i}\) where $c_{i}(n) \in{0,1,
+\ldots, 9},$
 are the digits in decimal expansion. Now consider a real
 number
-$$x=\sum_{i=1}^{\infty} \bar{c}_{i} 10^{-i} \in[0,1]$$
-with $\bar{c}_{i} \neq c_{i}(i)$. Obviously $C(n) \neq x$ for all $n \in \mathbb{N} .$ Hence $C$ is not onto. A
-contradiction.
-&lt;/div&gt;
+\(x=\sum_{i=1}^{\infty} \bar{c}_{i} 10^{-i} \in[0,1]\)
+with $\bar{c}&lt;em&gt;{i} \neq c&lt;/em&gt;{i}(i)$. Obviously $C(n) \neq x$ for all $n \in \mathbb{N} .$ Hence $C$ is not onto. A
+contradiction.&lt;/p&gt;
 
-&lt;pre&gt;
-&lt;code&gt;
-
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
 {% theorem %}
 
 The real numbers $\mathbb{R}$ are uncountable
@@ -125,8 +140,7 @@ with $\bar{c}_{i} \neq c_{i}(i)$. Obviously $C(n) \neq x$ for all $n \in
 
 {% endproof %}
 
-&lt;/code&gt;
-&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h1 id=&quot;html-elements&quot;&gt;HTML Elements&lt;/h1&gt;
 
@@ -134,7 +148,7 @@ with $\bar{c}_{i} \neq c_{i}(i)$. Obviously $C(n) \neq x$ for all $n \in
 
 &lt;p&gt;This sentence is &lt;strong&gt;bold&lt;/strong&gt;. This sentence is &lt;em&gt;italic&lt;/em&gt;. &lt;small&gt;Small&lt;/small&gt; text is for fine print. Your copy can also be &lt;sub&gt;subscripted&lt;/sub&gt; and &lt;sup&gt;superscripted&lt;/sup&gt;, &lt;ins&gt;inserted&lt;/ins&gt;, &lt;del&gt;deleted&lt;/del&gt;, or &lt;mark&gt;highlighted&lt;/mark&gt;. You would use a &lt;a href=&quot;https://github.com/ryanmcdermott/jekyll-latex&quot;&gt;hyperlink&lt;/a&gt; to go to a new page. Keyboard input elements like &lt;kbd&gt;Cmd + Shift&lt;/kbd&gt; are used to display textual user input.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;This sentence is **bold**. This sentence is *italic*.
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;This sentence is **bold**. This sentence is *italic*.
 &amp;lt;small&amp;gt;Small&amp;lt;/small&amp;gt; text is for fine print. Your
 copy can also be &amp;lt;sub&amp;gt;subscripted&amp;lt;/sub&amp;gt; and
 &amp;lt;sup&amp;gt;superscripted&amp;lt;/sup&amp;gt;, &amp;lt;ins&amp;gt;inserted&amp;lt;/ins&amp;gt;,
@@ -154,16 +168,12 @@ user input.
   &lt;dd&gt;$\iiint_V \mu(u,v,w) \,du\,dv\,dw$&lt;/dd&gt;
 &lt;/dl&gt;
 
-&lt;pre&gt;
-&lt;code&gt;
-First Term
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;First Term
 : This is the definition of the first term.
 
 Triple Integral
 : $\iiint_V \mu(u,v,w) \,du\,dv\,dw$
-
-&lt;/code&gt;
-&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;blockquotes&quot;&gt;Blockquotes&lt;/h2&gt;
 
@@ -226,7 +236,7 @@ sharpening the axe.
     &lt;figcaption&gt;Mountain landscape by John Towner.&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
 {% include image.html
     url=&quot;/assets/latex_image_example.jpeg&quot;
     description=&quot;Mountain landscape by John Towner.&quot;
@@ -251,7 +261,7 @@ sharpening the axe.
   &lt;li&gt;List Item 3&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
 ### Unordered List
 - List Item 1
 - List Item 2
@@ -266,8 +276,8 @@ sharpening the axe.
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 </description>
           <pubDate>2020-05-25T00:00:00-07:00</pubDate>
-          <link>https://ryanmcdermott.me/jekyll-latex/posts/what-is-jekyll-latex</link>
-          <guid isPermaLink="true">https://ryanmcdermott.me/jekyll-latex/posts/what-is-jekyll-latex</guid>
+          <link>http://localhost:4000/latex/posts/what-is-jekyll-latex</link>
+          <guid isPermaLink="true">http://localhost:4000/latex/posts/what-is-jekyll-latex</guid>
         </item>
       
     

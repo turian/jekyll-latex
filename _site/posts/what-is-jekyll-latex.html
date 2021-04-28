@@ -12,17 +12,17 @@
         Jekyll Latex</title>
 
 
-<meta name="description" content="AbstractThis project is called jekyll-latex. It allows you to write markdown posts using the Jekyll framework with the beautiful typography of LaTeX and the ...">
+<meta name="description" content="This project is called jekyll-latex. It allows you to write markdown posts using the Jekyll framework with the beautiful typography of LaTeX and the MathJax ...">
 
 
     <meta name="google-site-verification" content="abc123">
 
 
-<link rel="icon" href="https://ryanmcdermott.me/jekyll-latex/assets/favicon.png">
-<link rel="apple-touch-icon" href="https://ryanmcdermott.me/jekyll-latex/assets/touch-icon.png">
-<link rel="stylesheet" href="https://ryanmcdermott.me/jekyll-latex/assets/core.css">
-<link rel="canonical" href="https://ryanmcdermott.me/jekyll-latex/posts/what-is-jekyll-latex">
-<link rel="alternate" type="application/atom+xml" title="Jekyll Latex" href="https://ryanmcdermott.me/jekyll-latex/feed.xml"/>
+<link rel="icon" href="http://localhost:4000/latex/assets/favicon.png">
+<link rel="apple-touch-icon" href="http://localhost:4000/latex/assets/touch-icon.png">
+<link rel="stylesheet" href="http://localhost:4000/latex/assets/core.css">
+<link rel="canonical" href="http://localhost:4000/latex/posts/what-is-jekyll-latex">
+<link rel="alternate" type="application/atom+xml" title="Jekyll Latex" href="http://localhost:4000/latex/feed.xml"/>
 
 
 
@@ -40,37 +40,38 @@
 
 <body>
 	<aside class="logo">
-    
-
-    <a href="/">
-        <img class="gravatar" src="https://www.gravatar.com/avatar/e98e5de03e97f8498caab87e85a43f9a.png?s=80">
-    </a>
     <span class="logo-prompt">Back to Home</span>
 
 </aside>
 
+
 	<main>
 		<article>
+    <div class="Margins">
     <div class="center">
-        <h1>What Is jekyll-latex?</h1>
-        <p class="author">
-            John Doe
-            <br/>
+        <h1 class="LatexTitle">What Is jekyll-latex?</h1>
+        <p class="LatexName">John Doe</p>
+        <p class="LatexDate">
             May 25, 2020
         </p>
+
+        <div class="AbstractMargins">
+            <h3 class="LatexAbstract">
+                Abstract
+            </h3>
+            <p class="LatexAbstractText"></p>
+        </div>
 
     </div>
 
     <div class="divider"></div>
 
-    <div class="abstract"><h5>Abstract</h5><p>
-This project is called jekyll-latex. It allows you to write markdown posts using the Jekyll framework with the beautiful typography of <span class="latex">L<span>a</span>T<span>e</span>X</span> and the MathJax library so you can render gorgeous equations like this one below:
-$$ J(\theta) =\frac{1}{2m}
+    <p class="abstract">This project is called jekyll-latex. It allows you to write markdown posts using the Jekyll framework with the beautiful typography of <span class="latex">L<span>a</span>T<span>e</span>X</span> and the MathJax library so you can render gorgeous equations like this one below:
+\(J(\theta) =\frac{1}{2m}
 [\sum^m_{i=1}(h_\theta(x^{(i)}) -
-y^{(i)})2 + \lambda\sum^n_{j=1}\theta^2_j $$
-</p></div>
+y^{(i)})2 + \lambda\sum^n_{j=1}\theta^2_j\)</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 {% abstract %}
 This project is called jekyll-latex. It features the beautiful
 typography of &lt;span class="latex"&gt;L&lt;span&gt;a&lt;/span&gt;T&lt;span&gt;
@@ -110,7 +111,7 @@ y^{(i)})2 + \lambda\sum^n_{j=1}\theta^2_j $$
   </li>
 </ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 # Table of Contents
 * TOC
 {:toc}
@@ -119,24 +120,18 @@ y^{(i)})2 + \lambda\sum^n_{j=1}\theta^2_j $$
 
 <h1 id="theorems-definitions-and-proofs">Theorems, Definitions, and Proofs</h1>
 
-<div class="theorem">
-The real numbers $\mathbb{R}$ are uncountable
-</div>
+<p class="theorem">The real numbers $\mathbb{R}$ are uncountable</p>
 
-<div class="proof">
-If $\mathbb{R}$ is countable, then [0, 1] is countable as well. Hence there exists a map
-C from $\mathbb{N}$ onto [0, 1] with $$C(n)=\sum_{i=1}^{\infty} c_{i}(n) 10^{-i}$$ where $c_{i}(n) \in\{0,1,
-\ldots, 9\},$
+<p class="proof">If $\mathbb{R}$ is countable, then [0, 1] is countable as well. Hence there exists a map
+C from $\mathbb{N}$ onto [0, 1] with \(C(n)=\sum_{i=1}^{\infty} c_{i}(n) 10^{-i}\) where $c_{i}(n) \in{0,1,
+\ldots, 9},$
 are the digits in decimal expansion. Now consider a real
 number
-$$x=\sum_{i=1}^{\infty} \bar{c}_{i} 10^{-i} \in[0,1]$$
-with $\bar{c}_{i} \neq c_{i}(i)$. Obviously $C(n) \neq x$ for all $n \in \mathbb{N} .$ Hence $C$ is not onto. A
-contradiction.
-</div>
+\(x=\sum_{i=1}^{\infty} \bar{c}_{i} 10^{-i} \in[0,1]\)
+with $\bar{c}<em>{i} \neq c</em>{i}(i)$. Obviously $C(n) \neq x$ for all $n \in \mathbb{N} .$ Hence $C$ is not onto. A
+contradiction.</p>
 
-<pre>
-<code>
-
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 {% theorem %}
 
 The real numbers $\mathbb{R}$ are uncountable
@@ -158,8 +153,7 @@ with $\bar{c}_{i} \neq c_{i}(i)$. Obviously $C(n) \neq x$ for all $n \in
 
 {% endproof %}
 
-</code>
-</pre>
+</code></pre></div></div>
 
 <h1 id="html-elements">HTML Elements</h1>
 
@@ -167,7 +161,7 @@ with $\bar{c}_{i} \neq c_{i}(i)$. Obviously $C(n) \neq x$ for all $n \in
 
 <p>This sentence is <strong>bold</strong>. This sentence is <em>italic</em>. <small>Small</small> text is for fine print. Your copy can also be <sub>subscripted</sub> and <sup>superscripted</sup>, <ins>inserted</ins>, <del>deleted</del>, or <mark>highlighted</mark>. You would use a <a href="https://github.com/ryanmcdermott/jekyll-latex">hyperlink</a> to go to a new page. Keyboard input elements like <kbd>Cmd + Shift</kbd> are used to display textual user input.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This sentence is **bold**. This sentence is *italic*.
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>This sentence is **bold**. This sentence is *italic*.
 &lt;small&gt;Small&lt;/small&gt; text is for fine print. Your
 copy can also be &lt;sub&gt;subscripted&lt;/sub&gt; and
 &lt;sup&gt;superscripted&lt;/sup&gt;, &lt;ins&gt;inserted&lt;/ins&gt;,
@@ -187,16 +181,12 @@ user input.
   <dd>$\iiint_V \mu(u,v,w) \,du\,dv\,dw$</dd>
 </dl>
 
-<pre>
-<code>
-First Term
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>First Term
 : This is the definition of the first term.
 
 Triple Integral
 : $\iiint_V \mu(u,v,w) \,du\,dv\,dw$
-
-</code>
-</pre>
+</code></pre></div></div>
 
 <h2 id="blockquotes">Blockquotes</h2>
 
@@ -259,7 +249,7 @@ sharpening the axe.
     <figcaption>Mountain landscape by John Towner.</figcaption>
 </figure>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 {% include image.html
     url="/assets/latex_image_example.jpeg"
     description="Mountain landscape by John Towner."
@@ -284,7 +274,7 @@ sharpening the axe.
   <li>List Item 3</li>
 </ol>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 ### Unordered List
 - List Item 1
 - List Item 2
@@ -299,16 +289,17 @@ sharpening the axe.
 </code></pre></div></div>
 
 
+    </div>
 </article>
 
 <div class="page-navigation">
     
-        <a class="next" href="https://ryanmcdermott.me/jekyll-latex/posts/old-text" title="NEXT: Latex Jekyll">&lt;&lt;</a>
+        <a class="next" href="http://localhost:4000/latex/posts/neural-audio-ai" title="NEXT: Neural Audio AI">&lt;&lt; Next</a>
         <span>
             &middot;
         </span>
     
-    <a class="home" href="https://ryanmcdermott.me/jekyll-latex" title="Back to Homepage">Home</a>
+    <a class="home" href="http://localhost:4000/latex/" title="Back to Homepage">Home</a>
     
 </div>
 	</main>

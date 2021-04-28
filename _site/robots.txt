@@ -1,1 +1,1 @@
-Sitemap: https://ryanmcdermott.me/jekyll-latex/sitemap.xml
+Sitemap: http://localhost:4000/latex/sitemap.xml

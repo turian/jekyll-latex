@@ -7,10 +7,11 @@
         {% assign link = '/' %}
         {% assign prompt = 'Back to Home' %}
     {% endif %}
-
-    <a href="{{ link | prepend: site.baseurl }}">
-        <img class="gravatar" src="{{site.url}}{{site.baseurl}}/assets/author.jpeg">
-    </a>
+{%- if page.author.image -%}
+<a href="{{ link | prepend: site.baseurl }}">
+    <img class="gravatar" src="{{site.url}}{{site.baseurl}}{{page.author.image}}">
+</a>
+{%- endif -%}
     <span class="logo-prompt">{{ prompt }}</span>
 
 </aside>
